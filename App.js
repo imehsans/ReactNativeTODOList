@@ -1,5 +1,14 @@
 import React, {useState} from 'react';
-import { TextInput, TouchableOpacity , KeyboardAvoidingView, Platform, StyleSheet, Text, View, Keyboard } from 'react-native';
+import { 
+  TextInput, 
+  TouchableOpacity, 
+  KeyboardAvoidingView, 
+  Platform, 
+  StyleSheet, 
+  Text, 
+  View, 
+  Keyboard 
+} from 'react-native';
 import Task from './components/Task';
 
 export default function App() {
@@ -11,7 +20,7 @@ export default function App() {
     if (task) {
       setTaskItems([...taskItems, task]);
       setTask('');
-    } 
+    }
   }
   const completeTask = (index) => {
     let itemsCopy = [...taskItems];
